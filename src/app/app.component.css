@@ -1,0 +1,10 @@
+.active{
+    color: greenyellow;
+}
+.highlight{ 
+    color: blue;
+}
+p{
+    text-align: center;
+    color: aquamarine;
+}

@@ -1,0 +1,14 @@
+<div class="row">
+<div *ngFor="let cake of cakes" class="card mt-3" style="width: 18rem; margin-left: 15px;">
+    <img width="300px" height="300px" [src]="cake.imgSrc" class="card-img-top mt-3" alt="chocolate">
+    <div class="card-body">
+      <h5 class="card-title">{{cake.type}}</h5>
+      <p class="card-text">{{cake.ingridiens}}</p>
+    </div>
+    <div class="row btn-container">
+    <button (click)="DeleteCake(cake._id)" class="btn btn-primary">Delete</button>
+    <button class="btn btn-secondary">Modifie</button>
+
+  </div>
+  </div>
+</div>
